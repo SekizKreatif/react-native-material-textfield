@@ -450,12 +450,7 @@ export default class TextField extends PureComponent {
 
     let helperContainerStyle = {
       flexDirection: 'row',
-      height: (title || limit)?
-        titleFontSize * 2:
-        focus.interpolate({
-          inputRange:  [-1, 0, 1],
-          outputRange: [titleFontSize * 2, 8, 8],
-        }),
+      height: 0,
     };
 
     let containerProps = {
